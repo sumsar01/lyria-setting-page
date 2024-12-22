@@ -16,10 +16,43 @@ function getMarkdownFiles(dir) {
 }
 
 // Mock Dataview API parser (replace this with actual query execution in Obsidian)
-function executeDataviewQuery(query) {
-  // For demonstration, we mock the result.
-  // Replace this part with real Dataview query execution logic if possible.
-  return `Mocked result of query: ${query}`;
+async function executeDataviewQuery(query) {
+  const result = await dataview.query(query.trim());  // Execute the Dataview query
+  let formattedResult = "";
+
+  if (result.type === "table") {
+    // Format the result as an HTML table
+    formattedResult = "<table><thead><tr>";
+    result.columns.forEach(col => {
+      formattedResult += `<th>${col.name}</th>`;
+    });
+    formattedResult += "</tr></thead><tbody>";
+
+    result.rows.forEach(row => {
+      formattedResult += "<tr>";
+      result.columns.forEach(col => {
+        formattedResult += `<td>${row[col.name]}</td>`;
+      });
+      formattedResult += "</tr>";
+    });
+
+    formattedResult += "</tbody></table>";
+  } else if (result.type === "list") {
+    // Format the result as an HTML list
+    formattedResult = "<ul>";
+    result.rows.forEach(row => {
+      formattedResult += `<li>${row.name}</li>`; // Adjust based on your query results
+    });
+    formattedResult += "</ul>";
+  } else if (result.type === "text") {
+    // Format the result as plain text
+    formattedResult = result.rows.map(row => row.text).join("\n");
+  } else {
+    // Fallback for unrecognized result types
+    formattedResult = "Unable to process the result.";
+  }
+
+  return formattedResult;
 }
 
 // Process Markdown file and replace dataview queries with their output
