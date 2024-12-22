@@ -26,6 +26,10 @@ jobs:
           node-version: 22
       - name: Install Dependencies
         run: npm ci
+      - name: Run Dataview Query Replacement Script
+        run: |
+          # Run the custom script to replace Dataview queries with their results
+          node scripts/parse-md.js
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
