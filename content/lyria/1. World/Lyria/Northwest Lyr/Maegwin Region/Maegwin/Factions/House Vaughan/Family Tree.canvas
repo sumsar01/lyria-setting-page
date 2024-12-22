@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"d565ece1d67217ee","type":"text","text":"### Lady Carys Vaughan\n![[Lady Carys Vaughan.webp]]","x":-125,"y":-30,"width":365,"height":550,"color":"#fdfaf1"},
+		{"id":"f9ec77902dd89a42","type":"text","text":"","x":440,"y":245,"width":250,"height":60},
+		{"id":"96f895363b7d0b3d","type":"text","text":"### Meilyr Vaughan\n![[Meilyr Vaughan.webp]]","x":-70,"y":720,"width":390,"height":440},
+		{"id":"cf9b1e060d15ed5d","type":"text","text":"### Owain Vaughan\n![[Owain Vaughan.webp]]","x":370,"y":720,"width":390,"height":440},
+		{"id":"5ed1ef04416caa89","type":"text","text":"### Elin Vaughan\n![[Elin Vaughan.webp]]","x":800,"y":720,"width":380,"height":440},
+		{"id":"529260ce19ef1198","type":"text","text":"### Lord Idris Vaughan\n![[Lord Idris Vaughan.webp]]","x":920,"y":-30,"width":440,"height":550,"color":"#fdfaf1"}
+	],
+	"edges":[
+		{"id":"7a97e2119b54813c","fromNode":"d565ece1d67217ee","fromSide":"right","toNode":"f9ec77902dd89a42","toSide":"left"},
+		{"id":"7bf68a4b9df64edc","fromNode":"529260ce19ef1198","fromSide":"left","toNode":"f9ec77902dd89a42","toSide":"right"},
+		{"id":"6720b6e1e8e5b639","fromNode":"f9ec77902dd89a42","fromSide":"bottom","toNode":"96f895363b7d0b3d","toSide":"top"},
+		{"id":"1ba63331ee5f90cc","fromNode":"f9ec77902dd89a42","fromSide":"bottom","toNode":"cf9b1e060d15ed5d","toSide":"top"},
+		{"id":"954e517f1ac11552","fromNode":"f9ec77902dd89a42","fromSide":"bottom","toNode":"5ed1ef04416caa89","toSide":"top"}
+	]
+}

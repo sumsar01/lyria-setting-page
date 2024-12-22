@@ -1,0 +1,1 @@
+Poisonous gas fills the room (save versus poison or die).

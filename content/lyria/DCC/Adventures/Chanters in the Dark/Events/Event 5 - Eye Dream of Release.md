@@ -1,0 +1,1 @@
+This event occurs any number of times, as a dream or a vision. Characters see a vision of pearlescent eyes, and feel their gaze beseeching them for release.

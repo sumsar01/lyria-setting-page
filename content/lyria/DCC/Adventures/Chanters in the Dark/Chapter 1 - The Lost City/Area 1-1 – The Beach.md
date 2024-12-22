@@ -1,0 +1,11 @@
+> The stones are smooth and hard beneath hands and bodies as you draw yourselves out of the water. The wetness of the stones is barely discernable after being spilled into the dark water, but their slickness is palpable. From what you saw before your boat crashed upon the rock, the beach looked like a large area, and you cannot be sure how far back it goes. You have not even caught your breath before you realize that you are not alone—stones clatter, small hard bodies brush yours, and sharp pincers bite.
+
+The PCs are attacked by a swarm of subterranean devil crabs. There are hand- and footholds carved into the rock to the south, leading to **Area 1-2**. Normally, the PCs could escape the crabs by taking this route, or defeat them easily enough by dispersing the swarm. However, only PCs with infravision can see at the moment, making this combat far deadlier than it would otherwise be. Blind PCs feeling the rock can find the route to **Area 1-2** with a successful Luck check, while those with infravision can spot the handholds with a DC 10 Intelligence check. Without using the handholds, it is only a **DC 5** Strength or Climb Sheer Surfaces check to reach **Area 1-2**, but characters who cannot see suffer a **-4 penalty** to these checks.
+
+Because most of the characters cannot see, the judge should play up the feel of the slippery round stones, the scent of wet stone, the thunderous rush of the river. Any successful hit kills at least one crab, which gives off a pungent reek and cries out with almost-human screams.
+
+**Devil Crab Swarm**: Init +2; Atk swarming attack +1 melee (1d3 plus shred); AC 14; HD 6d8; hp 25; MV 20’ or swim 20’; Act special; SP attack all targets within 20’×20’ space, shred (DC 10 Ref save or 1d3 extra damage), half damage from non-area attacks; SV Fort +5, Ref +2, Will -2; AL N; Crit M/d12.
+
+**Event 1**, below, can be used by the judge to rescue a party in duress. This will also serve immediately to establish the beastmen as something other than just another group of adversaries. This is especially important if this adventure is being used to follow up Sailors on the Starless Sea, where beastmen were recurrent foes.
+
+[[Event 1 - Enter the Beastmen]]

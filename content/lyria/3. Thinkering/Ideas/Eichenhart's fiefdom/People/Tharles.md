@@ -1,0 +1,1 @@
+Tharles was a Cobbler by trade. After entering the ruined keep he tried to play the role of advisor to [[Bob Eichenhart]] both for the sake of his own survival and to get in his good grace.

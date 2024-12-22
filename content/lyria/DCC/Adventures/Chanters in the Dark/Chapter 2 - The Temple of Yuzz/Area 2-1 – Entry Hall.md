@@ -1,0 +1,3 @@
+> Beyond the archway is a great hall some thirty feet high, the ceiling held aloft by a line of ebony pillars to the left and right. The walls, ceiling, and floor are all covered with tiles of polished black stone. The hall leads into some larger space beyond, lit by a wavering pale-green radiance. The air smells of spoiled meat and rotting eggs, and it is cold enough in this place to see your breath. Although you can see no creatures, there is a prickling sense of being watched that makes the hairs rise on the back of your necks.
+
+There is no direct danger here, although the magician-priests become aware of the PCs as soon as they pass the threshold.

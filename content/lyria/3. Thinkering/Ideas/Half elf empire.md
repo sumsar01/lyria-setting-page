@@ -1,0 +1,1 @@
+Humans and elfs mix. Children are better at magic and can handle steel.

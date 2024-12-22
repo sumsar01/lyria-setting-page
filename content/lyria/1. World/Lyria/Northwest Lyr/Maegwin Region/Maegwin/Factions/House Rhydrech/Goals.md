@@ -1,0 +1,5 @@
+- **Preserve and Protect Nature**: House Rhydrech is dedicated to maintaining the natural balance in the lands surrounding Meagwin. They view the encroachment of other noble houses and excessive development with suspicion, seeking to preserve the forests, rivers, and wild lands under their care.
+    
+- **Expand Arcane and Druidic Knowledge**: The Rhydrechs believe that their future lies in the deepening of their understanding of both nature and magic. They seek out ancient relics, magical creatures, and long-lost knowledge to enhance their power and understanding of the arcane.
+    
+- **Maintain Autonomy and Independence**: House Rhydrech values their independence, often avoiding the internal politics of Meagwin in favor of their own interests. They prefer to remain secluded in their lands, only engaging with other factions when necessary to protect their borders or secure resources.

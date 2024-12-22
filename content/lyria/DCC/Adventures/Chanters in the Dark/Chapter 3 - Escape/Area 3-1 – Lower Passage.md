@@ -1,0 +1,1 @@
+> This passage slants downward at a slight, but perceptible, slope in serpentine loops. It consists of worked stone, older even than the ruined city of the beastmen, and is unpleasantly greasy to the touch. The faint sounds of alien chanting become audible, and then increasingly louder as you descend.

@@ -1,0 +1,1 @@
+Entry alarm that attracts nearby guardians.

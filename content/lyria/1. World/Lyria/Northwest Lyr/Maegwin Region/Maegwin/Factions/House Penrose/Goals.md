@@ -1,0 +1,7 @@
+- **Preservation of Ancient Knowledge**: House Penrose places immense value on the preservation and expansion of arcane knowledge. They maintain a vast library of magical texts and artifacts, and they regularly fund expeditions to ancient ruins in search of lost wisdom and power.
+    
+- **Increasing Political Influence Through Subtlety**: Unlike other noble houses that rely on military strength or trade, House Penrose seeks to manipulate political events through careful scheming, blackmail, and magic. They aim to become the hidden hand that guides the region's power dynamics without overt displays of force.
+    
+- **Control Over Magical Resources**: The Penrose lands are rich with rare herbs and enchanted minerals that are vital to magic users. House Penrose jealously guards these resources, seeking to establish a monopoly over the region’s magical supply, selling only to those who are loyal or useful to their cause.
+    
+- **Maintaining Isolation and Autonomy**: The Penrose family prefers to remain distant from the politics and rivalries of other noble houses, maintaining their autonomy by cultivating an air of mystery and power. They engage with other houses only when it suits their interests, ensuring that no one can fully predict their next move.
