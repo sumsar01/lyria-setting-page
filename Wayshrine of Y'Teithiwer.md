@@ -8,7 +8,7 @@ region:
   - "[[Maegwin Region|Maegwin Region]]"
 population: 0
 guildsgroups: 
-deity: "[[Y'Teithiwer the Traveler]]"
+deity: "[[Y'Teithiwer the Traveler|Y'Teithiwer the Traveler]]"
 commonraces: 
 cssclasses:
   - wide-page
@@ -16,20 +16,20 @@ cssclasses:
 
 > [!infobox]
 > # Wayshrine of Y'Teithiwer
-> ![[Wayshrine of Y'Teithiwer.webp|cover hsmall]]
-> [[Wayshrine of Y'Teithiwer.webp|Show To Players]]
+> ![[./content/lyria/z_Assets/Places/Lyria/Wayshrine of Y'Teithiwer.webp|cover hsmall]]
+> [[./content/lyria/z_Assets/Places/Lyria/Wayshrine of Y'Teithiwer.webp|Show To Players]]
 > ###### Geography
 > Type |  Stat |
 > ---|---|
 > Type | Temple |
-> Region | [[content/lyria/1. World/Lyria/Northwest Lyr/Maegwin Region/Maegwin Region.md|Maegwin Region]] |
+> Region | [[Maegwin Region|Maegwin Region]] |
 > ###### Religion
 > Type |  Stat |
 > ---|---|
-> Deity | [[content/lyria/1. World/Religions/Neutral/Y'Teithiwer the Traveler.md|Y'Teithiwer the Traveler]] |
+> Deity | [[Y'Teithiwer the Traveler|Y'Teithiwer the Traveler]] |
 
 # Wayshrine of Y'Teithiwer
-Tucked away in an unassuming clearing where trade routes once crossed, the **Shrine of [[Y'Teithiwer the Traveler]]** is a testament to both its namesake god and the people who once honored him. Though uninhabited for centuries, the shrine remains remarkably intact, its imported stone and craftsmanship speaking to a time when it served as a beacon for travelers and pilgrims alike.
+Tucked away in an unassuming clearing where trade routes once crossed, the **Shrine of [[Y'Teithiwer the Traveler|Y'Teithiwer the Traveler]]** is a testament to both its namesake god and the people who once honored him. Though uninhabited for centuries, the shrine remains remarkably intact, its imported stone and craftsmanship speaking to a time when it served as a beacon for travelers and pilgrims alike.
 
 ## Overview
 ### **Exterior:**
