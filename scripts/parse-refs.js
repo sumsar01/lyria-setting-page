@@ -26,12 +26,38 @@ function replaceThisExpressions(content, frontmatter) {
   });
 }
 
+// Function to ensure we have valid frontmatter, and ignore improper YAML
+function cleanFrontmatter(content) {
+  // Match YAML frontmatter, but allow multi-line values or invalid table-like lines to be ignored
+  const frontmatterRegex = /^(---[\s\S]*?---)/;
+
+  const frontmatterMatch = content.match(frontmatterRegex);
+
+  // If frontmatter exists, ensure it doesn't contain table-like invalid entries
+  if (frontmatterMatch) {
+    const frontmatterContent = frontmatterMatch[1];
+
+    // Remove lines like "---|---|" from frontmatter content to prevent issues with YAML parsing
+    const cleanedContent = frontmatterContent.replace(/---\|---\|/g, '');
+
+    return cleanedContent;
+  }
+
+  return content;
+}
+
 // Function to process each markdown file
 function processFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf-8');
-  const { data: frontmatter, content: markdownContent } = matter(content); // Parse the frontmatter
 
-  let modifiedContent = replaceThisExpressions(markdownContent, frontmatter); // Replace expressions with values
+  // Clean frontmatter to avoid invalid syntax like "---|---|"
+  const cleanedContent = cleanFrontmatter(content);
+
+  // Now parse the cleaned content with gray-matter
+  const { data: frontmatter, content: markdownContent } = matter(cleanedContent);
+
+  // Replace expressions like =this.property with actual values from frontmatter
+  let modifiedContent = replaceThisExpressions(markdownContent, frontmatter);
 
   // If the content was modified, write it back to the file
   if (modifiedContent !== markdownContent) {
