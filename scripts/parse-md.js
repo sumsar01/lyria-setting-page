@@ -1,61 +1,50 @@
 import fs from 'fs';
 import path from 'path';
+import matter from 'gray-matter'; // For parsing YAML frontmatter
+import glob from 'glob'; // For reading files recursively
 
 // Function to read all Markdown files recursively from a folder
 function getMarkdownFiles(dir) {
   let files = [];
-  fs.readdirSync(dir).forEach((file) => {
-    const fullPath = path.join(dir, file);
-    if (fs.lstatSync(fullPath).isDirectory()) {
-      files = files.concat(getMarkdownFiles(fullPath));
-    } else if (fullPath.endsWith('.md')) {
-      files.push(fullPath);
-    }
+  glob.sync(path.join(dir, '**/*.md')).forEach(file => {
+    files.push(file);
   });
   return files;
 }
 
-// Mock Dataview API parser (replace this with actual query execution in Obsidian)
-async function executeDataviewQuery(query) {
-  const result = await dataview.query(query.trim());  // Execute the Dataview query
-  let formattedResult = "";
+// Function to parse a simple Dataview-like query and filter markdown files accordingly
+function executeDataviewQuery(query, files) {
+  // Example query parsing for basic "WHERE" and "SORT" clauses
+  const whereMatch = query.match(/WHERE\s+(.*)/);
+  const sortMatch = query.match(/SORT\s+(.*)/);
 
-  if (result.type === "table") {
-    // Format the result as an HTML table
-    formattedResult = "<table><thead><tr>";
-    result.columns.forEach(col => {
-      formattedResult += `<th>${col.name}</th>`;
-    });
-    formattedResult += "</tr></thead><tbody>";
+  let filteredFiles = files;
 
-    result.rows.forEach(row => {
-      formattedResult += "<tr>";
-      result.columns.forEach(col => {
-        formattedResult += `<td>${row[col.name]}</td>`;
-      });
-      formattedResult += "</tr>";
-    });
+  // Apply "WHERE" condition if it exists
+  if (whereMatch) {
+    const condition = whereMatch[1].trim();
+    const [key, value] = condition.split('=').map(str => str.trim().replace(/["']/g, ''));
 
-    formattedResult += "</tbody></table>";
-  } else if (result.type === "list") {
-    // Format the result as an HTML list
-    formattedResult = "<ul>";
-    result.rows.forEach(row => {
-      formattedResult += `<li>${row.name}</li>`; // Adjust based on your query results
+    filteredFiles = filteredFiles.filter(file => {
+      const { data } = matter(fs.readFileSync(file, 'utf-8'));
+      return data[key] && data[key] === value;
     });
-    formattedResult += "</ul>";
-  } else if (result.type === "text") {
-    // Format the result as plain text
-    formattedResult = result.rows.map(row => row.text).join("\n");
-  } else {
-    // Fallback for unrecognized result types
-    formattedResult = "Unable to process the result.";
   }
 
-  return formattedResult;
+  // Apply "SORT" if it exists
+  if (sortMatch) {
+    const sortField = sortMatch[1].trim();
+    filteredFiles = filteredFiles.sort((a, b) => {
+      const { data: dataA } = matter(fs.readFileSync(a, 'utf-8'));
+      const { data: dataB } = matter(fs.readFileSync(b, 'utf-8'));
+      return dataA[sortField] > dataB[sortField] ? 1 : -1;
+    });
+  }
+
+  return filteredFiles;
 }
 
-// Process Markdown file and replace dataview queries with their output
+// Function to replace Dataview blocks with the results of the query
 function processFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf-8');
   const dataviewRegex = /```dataview([\s\S]*?)```/g;
@@ -64,7 +53,23 @@ function processFile(filePath) {
 
   // Replace each dataview block with the result of its query
   content = content.replace(dataviewRegex, (match, query) => {
-    const result = executeDataviewQuery(query.trim());
+    // Get all markdown files (for query execution)
+    const files = getMarkdownFiles('content'); // You should specify the correct path for your markdown files
+    const filteredFiles = executeDataviewQuery(query.trim(), files);
+
+    // Build a table-like result for the Dataview block
+    let result = "<table><thead><tr><th>File Name</th><th>Title</th></tr></thead><tbody>";
+
+    filteredFiles.forEach(file => {
+      const { data } = matter(fs.readFileSync(file, 'utf-8'));
+      result += `<tr>
+        <td>${path.basename(file)}</td>
+        <td>${data.title || 'N/A'}</td>
+      </tr>`;
+    });
+
+    result += "</tbody></table>";
+
     modified = true;
     return result;
   });
@@ -78,7 +83,7 @@ function processFile(filePath) {
   }
 }
 
-// Main script function
+// Main script function to process all markdown files in a directory
 function processVault(vaultPath) {
   const markdownFiles = getMarkdownFiles(vaultPath);
 
