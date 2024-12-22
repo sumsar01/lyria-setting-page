@@ -30,6 +30,10 @@ jobs:
         run: |
           # Run the custom script to replace Dataview queries with their results
           node scripts/parse-md.js
+      - name: Run properties Replacement Script
+        run: |
+          # Run the custom script to replace Dataview queries with their results
+          node scripts/parse-refs.js
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
