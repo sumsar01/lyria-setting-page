@@ -1,0 +1,9 @@
+> The cavern forms a great drop here, with a torrential fall coming from somewhere lost in the darkness overhead, crashing down to be lost in the darkness below. A narrow ledge winds around the edge of the abyss, behind the waterfall, and into another passage beyond.
+
+Beastmen may bring PCs asking about the sun or light to this place. The ceiling here is 200’ above the level of the PCs, the ultimate abyss (**Area 3-4**) is 200’ below. Beastmen also throw their dead in this chasm, piping mournfully upon their bone flutes, thus feeding the Corruption Below. The beastmen will wish to follow the same funerary custom with any dead PCs.
+
+Each time the PCs traverse this ledge, there is a 1 in 5 chance that 1d3 chanters in the dark fly up from the abyss below. This takes them 10 rounds, but they remain in the area for 1d6 turns, and are therefore likely to encounter PCs on their return trip.
+
+Any successful attack against creatures on the ledge requires a **Reflex save** (DC 5 + damage done) or the target is knocked from the ledge. A falling character gains a **DC 14 Reflex save** to catch themselves. A PC hanging from the ledge must make a **Strength check each round** (modified by armor): A result of 10 or better allows the PC to regain the ledge. A result of 4 or lower means the PC has lost their grip and falls. Any successful attack against a PC hanging from the ledge requires a **DC 15 Fort save** to retain their grip; failure indicates a fall. Falling damage is 10d6 (reduced for the water below), and the character drops into the lake at **Area 3-4**.
+
+**Chanters in the Dark** (varies): Init +0; Atk pincer +2 melee (1d4) or bite +0 melee (1 plus venom); AC 12; HD 1d12; hp 7 each; MV 10’ or fly 20’; Act 1d20; SP infravision 60’, immune to mind-affecting spells, venom (DC 7 Fort save or 1d3 temporary Personality damage), turning vulnerability (can be turned by lawful or neutral clerics); SV Fort +3, Ref +0, Will +0; AL C; Crit M/d6.

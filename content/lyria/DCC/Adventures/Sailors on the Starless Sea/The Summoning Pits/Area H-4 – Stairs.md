@@ -1,0 +1,9 @@
+> Dozens of thick, braided vines have wormed their way up the steep stone steps, nearly filling the stairway. The walls, ceiling and vines are all slick with moisture billowing up from below.
+
+The vines are extremely slick, and unless the PCs take precautions, the descent to area H-5 is fraught with peril. These precautions need not be elaborate – simply tying off to one another, or anchoring a rope is sufficient – but those failing to do so must make DC 10 Agility checks as they descend the stairs.
+
+Characters failing the check slip down the slick vines and shoot out into the rift at the base of the steps. Characters can attempt a DC 15 Reflex save to catch themselves on the vines before plummeting into the abyss, but those who fail vanish down into darkness, never to be seen again. (Or, at the judge’s pleasure, returning as horrid vine-liches much later in the campaign.)
+
+The base of the stairs open to a black rift in the earth, the source of the vine-god. Crossing the gap to area H-5 is readily accomplished, through there is no room for error. Long, ropey vines cross the gap over the rift to the altar chamber; all that is required of the PCs to cross is the courage to walk or crawl along the vines (DC 5 Agility checks). Characters failing the checks may desperately grab at the vines (DC 10 Reflex save), or plummet to their doom.
+
+Otherwise, the craggy gap is a 15’ leap, with edges of crumbling stone. Characters refusing to trust the vines can try to leap the gap (DC 15 Strength check) but those failing the check have no chance to catch themselves: the crumbling stone gives way beneath their grasping hands, pitching the screaming PCs down into darkness.

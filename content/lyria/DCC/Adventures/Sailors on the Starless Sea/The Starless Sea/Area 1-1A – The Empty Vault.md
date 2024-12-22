@@ -1,0 +1,7 @@
+> The narrow hall is lined with cut stone blocks. Dusty cobwebs hang from the low ceiling and time itself seems to weigh upon this ancient place. A trio of upended chests rest in the shadows in the rear of the chamber amid a scattering of coins. Tracks in the dust record the path of recent looters.
+
+This vault once held the amassed wealth of the chaos lords. Unfortunately, the beastmen have already transported the bulk of the wealth to **area 1-5**. All that remains are three chests and the spilled coins littering the floor (**1d20 cp, 1d12 sp, 1d8 gp**). While all of the chests are unlocked and emptied of wealth, the beastmen missed a secret compartment hidden in the base of the second chest.
+
+While the hidden compartment is easy to discover (the floor of the chest is 4 inches too high), opening the compartment poses a danger. The compartment can be opened by sliding a false panel in the back of the chest. Unless the PC also succeeds on a **DC 15** Reflex save, the PC is struck by a slim, scything blade trap, **inflicting 1d4** points of damage and slicing off **1d2 fingers**.
+
+Hidden inside the compartment are two silver rings set with emeralds (**worth 15 gp each**), a silk tabard stitched with the sigil of Chaos (**worth 5 gp**) and a steel vial containing two doses of black lotus oil. Characters imbibing the lotus **oil gain 1d10 hp for 1 hour**, but at the end of the hour lose any hp gained from the oil and must succeed on a **DC 10** Fortitude save or take **1d4 points of damage**.

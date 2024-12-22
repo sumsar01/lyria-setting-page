@@ -1,0 +1,7 @@
+- **Lord Emyr Penrose**: The current head of the house, Lord Emyr is a cunning and reserved man known for his vast knowledge of magic and history. He rarely engages in public affairs, preferring to work from the shadows, but his influence extends far beyond his remote holdings. His command of magic and his ability to manipulate political outcomes without ever showing his hand have made him a figure both respected and feared.
+    
+- **Lady Morwen Penrose**: The wife of Lord Emyr, Lady Morwen is known for her sharp intellect and cold demeanor. She is a master of herbalism and potion-making, often creating concoctions that can heal or harm depending on her need. Morwen is also deeply involved in magical rituals, holding secret ceremonies in the family’s ancient chapel.
+    
+- **Aeron Penrose**: The eldest son of House Penrose, Aeron is a gifted sorcerer who inherited his parents’ talent for magic. However, he is more brash and ambitious than his father, often seeking ways to expand the family’s influence through magical power. He has a tense relationship with Emyr, as his desire for conquest contrasts with the more subtle methods favored by his father.
+    
+- **Luned Penrose**: The youngest daughter, Luned is quiet but observant, known for her ability to blend into the background and gather information. She is a talented spy and works in secret for her father, often infiltrating rival houses to obtain knowledge or blackmail material. Her subtlety is her greatest strength, and she often plays a key role in the family’s schemes.

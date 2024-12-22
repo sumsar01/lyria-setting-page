@@ -1,0 +1,1 @@
+A soft susurrus of damned voices fills the unhallowed ground. Non-Chaotic creatures suffer a –1 penalty to initiative and surprise and must Save v. Spells each time they enter the ground or be affected as per (1-4) the blight spell (reverse of bless) or (5-6) confusion.

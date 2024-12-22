@@ -1,0 +1,13 @@
+The door to this chamber is trapped; opening it without first activating a hidden catch causes a stone bludgeon to swing down from the wall above the door. It attacks with a +4 bonus against the person opening the door, and deals 1d4+3 damage on a successful strike. The trap can be found with a **DC 15 Find Trap check**, and neutralized with a **DC 10 Disable Trap check**.
+
+> Beyond the trapped door is a chamber, some fifty feet wide and thirty feet deep. Five greenish-black stone thrones face you, three of which are occupied by beastmen: two with heads of black sheep flanking an imposing beastman who combines the features of a tiger over the body of an ox. All three have gauze bandages over their eyes. As the door swings open, you hear a voice say, “Go! Even now your sins may be forgiven.” Although none of their lips move. You can see a dark passage in the far wall leading downwards.
+
+These are the final three un-dead magician-priests. The goatheaded priests, Kagg and Karg, can each use an action die to create a phantom duplicate of himself. The phantom duplicates reduce the original by 1 hp, and are destroyed by any successful hit, but each gains an action die to make melee attacks. They otherwise use the statistics of the original. Kagg and Karg can each make one duplicate per round. They seek to use this power to delay the PCs while the other magician-priest, Halmurg the Overlord, casts spells from his throne.
+
+**Kagg and Karg**: Init +2; Atk stone dagger +3 melee (1d4); AC 12; HD 3d12; hp 15 each; MV 30’; Act 2d20; SP infravision 60’, duplication, un-dead traits; SV Fort +6, Ref +3, Will +4; AL C; Crit U/d8.
+
+Halmurg casts both wizard and cleric spells, suffering the normal penalties for failure in either case. So long as he remains seated on his throne, he has a **+2 bonus to spell checks**. Beneath his beastman disguise, Halmurg wears a **rune-covered tarnished silver ring** that grants a +4 bonus to all saving throws (reflected in his statistics).
+
+**Halmurg the Overlord**: Init +4; Atk stone dagger +1 melee (1d4) or spell; AC 13; HD 3d12; hp 25; MV 30’; Act 1d20; SP infravision 60’, un-dead traits, spellcasting (+3 spell check, +5 on throne): Spells Cleric (1st) paralysis, word of command, (2nd) lotus stare; Spells Wizard (1st) choking cloud, magic missile; SV Fort +8, Ref +8, Will +12; AL C; Crit U/d8.
+
+The passage on the far side of the room leads to **Area 3-1**

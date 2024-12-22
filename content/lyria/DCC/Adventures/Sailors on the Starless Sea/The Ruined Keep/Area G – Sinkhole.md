@@ -1,0 +1,9 @@
+> A yawning sinkhole has devoured nearly a third of the courtyard, causing a tower and wall to collapse and plunge down into the depths. Mist billows up from the sinkhole, obscuring sight. Tortured faces and writhing forms appear briefly in the mists above your heads, only to dissolve back into nothingness as quickly as they appeared.
+
+The raw power emanating from the temple of Chaos (see area 1-5) has undermined the ground, causing the earth to collapse. Approaching the edge is risky—any additional weight can cause the earth to give way.
+
+Heroes coming within 15 feet of the lip of the sinkhole have the eerie premonition that the earth is hollow beneath them, as if they were walking on a frozen lake. If the PCs come within 5 feet, the earth gives way. A PC must succeed on a DC 13 Reflex save to seize hold of the crumbling lip or plummet to his doom.
+
+A PC can pull himself up over the lip with a desperate DC 15 Strength check. Other heroes can leap to his aid, but their weight causes the edge of the sinkhole to fall away, sending allies plummeting to their deaths and starting the cycle anew. Heroes can counteract the weak crust by splaying out, spread eagle. However, at the judge’s discretion, large PCs or those encumbered by heavy armor may cause the earth to give way regardless.
+
+Characters peering down into the writhing mists can see only 30 feet before their vision is entirely obscured by the billowing clouds of mist rising from below. While the goal of their quest lies exposed, over 500 feet below, descending the sinkhole is almost physically impossible. Heroes can rappel down the side of the sinkhole, but after 45 feet it opens into the ceiling of the yawning cave. Without several hundred feet of rope, the PCs will be forced to find another route to the caverns below

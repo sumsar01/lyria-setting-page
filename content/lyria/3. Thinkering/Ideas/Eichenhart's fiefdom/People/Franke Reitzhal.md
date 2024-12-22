@@ -1,0 +1,1 @@
+Although never very intelligent Franke started out his life as a scribe.

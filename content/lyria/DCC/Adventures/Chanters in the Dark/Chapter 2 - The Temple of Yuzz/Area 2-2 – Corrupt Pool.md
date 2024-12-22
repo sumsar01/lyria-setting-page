@@ -1,0 +1,5 @@
+> Moving forward, you see a large space seventy feet square, the fifty-foot-high ceiling supported by four thick black pillars each to the right and left. The source of the pale greenish light is clear—a pool thirty feet wide and forty feet long is set into the floor here, and the water shimmers with eerie light. There is a stone door in the center of the far wall, and two wide stone stairways leading out of the space to either side: upwards to the east and downwards to the west.
+
+The pool consists of material taken from the Corruption Below in a time long before it had become sentient. The magician-priests can mentally control this material; when the PCs enter the room, the magician-priests use it to form five whipcord-thin reptilian warriors with bulbous eyes, each armed with a serrated-edged club. These appear as the Yuzz did when alive, but they glow with a greenish light, and collapse into foul liquid when reduced to 0 hp.
+
+**False Yuzz Warriors** (5): Init +2; Atk serrated club +4 melee (1d6); AC 14; HD 2d8; hp 9 each; MV 40’; Act 1d20; SP infravision 60’, death throes (collapse to foul liquid); SV Fort +5, Ref +4, Will +8; AL C; Crit III/d8.

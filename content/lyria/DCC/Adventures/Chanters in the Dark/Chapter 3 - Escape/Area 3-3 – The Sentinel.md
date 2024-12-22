@@ -1,0 +1,11 @@
+> Ahead in the darkness, perhaps some fifty feet away, is a glimmering pale form, like a giant green-white puffball mushroom. It stands on dozens of legs, each of which ends with a large, sucker-like pad. You can see what appears to be a ribcage below the leathery fungal exterior, but no other features.
+
+This creature is the Sentinel, set here to guard the final passage to the Corruption Below. Like the Caretaker, there is only one Sentinel at a time, and the Corruption Below requires 1d7 days to gestate another.
+
+**Sentinel**: Init +3; Atk maw +5 melee (1d8 plus restraint) or ram +4 melee (2d6) or fungal tongue +6 ranged (capture and pull); AC 16; HD 10d12; hp 60; MV 30’ or climb 20’; Act 1d20; SP infravision 60’, restrain targets, capture and pull 10’ with tongue; SV Fort +6, Ref +3, Will +6; AL C; Crit M/d16.
+
+When it attacks, the Sentinel’s rib cage opens up like a sharp-fanged maw, with an audible ripping sound and the nauseating odor of rotten meat. Its fungal tongue can attack targets up to 30’ away, and on a successful attack, captures the target and pulls it toward the Sentinel. The target can attempt an **opposed Strength check** vs. +6 to resist being pulled, while a **DC 15 Strength check** or a successful Mighty Deed can dislodge the tongue’s grasp. Otherwise, each round, the victim is dragged 10’ closer to the Sentinel, until it is drawn into the Sentinel’s maw.
+
+When attacking with its maw, targets not caught by the tongue are allowed a **DC 10 Reflex save** to avoid being captured. Otherwise, the target is restrained in the maw, which seals behind it. The Sentinel then travels as quickly as it can to **Area 3-4**, where restrained targets are expelled into the Corruption’s lake. It can only make ram attacks so long as it has a target restrained in its maw. Restrained targets are unable to take any action requiring physical movement, although their muffled voices can still be heard.
+
+Unless forced to attack, the Sentinel uses its action die to move once it has restrained a target.

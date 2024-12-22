@@ -1,0 +1,5 @@
+> to a chamber forty feet across and thirty feet deep. Prayer mats of gold and violet fungal material are arranged on the black tiles of the floor. A cross-legged beastman with almost wolf-like features sits on one of the mats, his eyes covered with a strip of gauze.
+
+This magician-priest, Kahl the Open Fist, is a master of unarmed combat, able to strike deadly blows even without weapons. Kahl has two action dice; if he desires, he is able to divide them, using one at his initiative count, and the other at the end of the round or when struck in combat. When struck in combat, Kahl can use an action die to block the attack, even if it was a critical hit, avoiding all of its effects. If Kahl is reduced to 0 hp, his body withers inside its beastman skin and turns to ash.
+
+**Kahl the Open Fist**: Init +4; Atk open fist +4 melee (1d5); AC 16; HD 3d12; hp 18; MV 30’; Act 2d20; SP infravision 60’, split actions, block attack, un-dead traits, death throes (wither to ash); SV Fort +5, Ref +5, Will +5; AL C; Crit U/d8

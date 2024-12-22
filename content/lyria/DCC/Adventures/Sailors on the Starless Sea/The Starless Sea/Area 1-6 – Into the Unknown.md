@@ -1,0 +1,5 @@
+> The towering wave propels you with terrifying speed towards the distant cavern wall! Ahead, through a sea of towering whitecaps and the debris of falling boulders you spy the mouth of a narrow cave! The dragon-prowed ship rides down the crest of the giant wave and shoots into the rocky maw, the howling surf crashing all around you!
+
+The ending of the adventure (and the start of the next) is entirely up to the judge. Area 1-6 can open into an aboveground river, seated deep in the base of a ravine, or plunge the PCs deeper beneath the surface of the earth. The former allows the PCs to return to their home village, lick their wounds, and consider their next quest. The latter plunges the PCs into another adventure before their first has scarcely ended.
+
+Whatever the judge’s whim, XP and Luck should be awarded prior to the beginning of the next adventure, for—be it by luck or skill—surviving PCs have surely earned their just rewards.
