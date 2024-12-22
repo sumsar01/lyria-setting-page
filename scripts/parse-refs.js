@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter'; // For parsing YAML frontmatter
-import glob from 'glob'; // For reading files recursively
+import { glob } from 'glob'; // For reading files recursively
 
 // Function to read all Markdown files recursively from a folder
 function getMarkdownFiles(dir) {
