@@ -12,35 +12,42 @@ function getMarkdownFiles(dir) {
   return files;
 }
 
-// Function to replace expressions like =this.property with the actual value from frontmatter
-function replaceThisExpressions(content, frontmatter) {
-  const regex = /=this\.(\w+)/g; // Matches =this.property expressions
-
-  // Replace each =this.property with the corresponding value from frontmatter
+// Function to replace expressions like =this.file.name with the actual value
+function replaceThisExpressions(content, frontmatter, filePath) {
+  const regex = /=this\.(\w+(\.\w+)*)/g; // Matches =this.property or =this.file.name (including nested properties)
+  
+  // Replace each =this.property with the corresponding value from frontmatter or the file metadata
   return content.replace(regex, (match, property) => {
-    if (frontmatter[property] !== undefined) {
+    // Handle specific properties from frontmatter
+    if (property in frontmatter) {
       return frontmatter[property]; // Replace with actual value from frontmatter
-    } else {
-      return match; // If no such property, keep the original expression
+    } 
+    // Handle special properties like file.name or file.path
+    else if (property === 'file.name') {
+      const fileName = path.basename(filePath, '.md');
+      return fileName; // Replace with the file name (without the extension)
     }
+    else if (property === 'file.path') {
+      return filePath; // Replace with the full file path
+    }
+    // If no such property, return the original expression
+    return match;
   });
 }
 
-// Function to ensure we have valid frontmatter, and ignore improper YAML
+// Function to ensure we have valid frontmatter, and ignore improper YAML entries like "---|---|"
 function cleanFrontmatter(content) {
-  // Match YAML frontmatter, but allow multi-line values or invalid table-like lines to be ignored
   const frontmatterRegex = /^(---[\s\S]*?---)/;
 
   const frontmatterMatch = content.match(frontmatterRegex);
 
-  // If frontmatter exists, ensure it doesn't contain table-like invalid entries
   if (frontmatterMatch) {
-    const frontmatterContent = frontmatterMatch[1];
+    let frontmatterContent = frontmatterMatch[1];
 
-    // Remove lines like "---|---|" from frontmatter content to prevent issues with YAML parsing
-    const cleanedContent = frontmatterContent.replace(/---\|---\|/g, '');
+    // Remove lines like "---|---|" from frontmatter content
+    frontmatterContent = frontmatterContent.replace(/---\|---\|/g, '');
 
-    return cleanedContent;
+    return frontmatterContent;
   }
 
   return content;
@@ -53,11 +60,14 @@ function processFile(filePath) {
   // Clean frontmatter to avoid invalid syntax like "---|---|"
   const cleanedContent = cleanFrontmatter(content);
 
-  // Now parse the cleaned content with gray-matter
+  // Parse the frontmatter with gray-matter
   const { data: frontmatter, content: markdownContent } = matter(cleanedContent);
 
-  // Replace expressions like =this.property with actual values from frontmatter
-  let modifiedContent = replaceThisExpressions(markdownContent, frontmatter);
+  console.log(`Processing file: ${filePath}`);
+  console.log('Frontmatter:', frontmatter);
+
+  // Replace expressions like =this.property with actual values from frontmatter or file properties
+  let modifiedContent = replaceThisExpressions(markdownContent, frontmatter, filePath);
 
   // If the content was modified, write it back to the file
   if (modifiedContent !== markdownContent) {
@@ -73,6 +83,7 @@ function processFile(filePath) {
 function processVault(vaultPath) {
   const markdownFiles = getMarkdownFiles(vaultPath);
 
+
   markdownFiles.forEach((file) => {
     processFile(file);
   });
@@ -82,4 +93,5 @@ function processVault(vaultPath) {
 
 // Run the script
 const vaultPath = path.resolve('content'); // Replace with your vault path
+
 processVault(vaultPath);
