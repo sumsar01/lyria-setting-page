@@ -1,3 +1,3 @@
 [submodule "lyria"]
-	path = content\lyria
+	path = content/lyria
 	url = https://github.com/sumsar01/lyria-setting

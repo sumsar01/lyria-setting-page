@@ -1,4 +1,5 @@
 ---
+share: true
 NoteIcon: Location
 tags:
   - Category/Location
