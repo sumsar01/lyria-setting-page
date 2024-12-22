@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 // Function to read all Markdown files recursively from a folder
 function getMarkdownFiles(dir) {
