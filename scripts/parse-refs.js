@@ -6,7 +6,7 @@ import { glob } from 'glob'; // For reading files recursively
 // Function to read all Markdown files recursively from a folder
 function getMarkdownFiles(dir) {
   let files = [];
-  glob.sync(path.join(dir, '**/*.md')).forEach(file => {
+  glob.sync(path.join(dir, 'index.md')).forEach(file => {
     files.push(file);
   });
   return files;
@@ -16,7 +16,6 @@ function getMarkdownFiles(dir) {
 function replaceThisExpressions(content, frontmatter, filePath) {
   const regex = /=this\.(\w+(\.\w+)*)/g; // Matches =this.property or =this.file.name (including nested properties)
   
-  // Replace each =this.property with the corresponding value from frontmatter or the file metadata
   return content.replace(regex, (match, property) => {
     // Handle specific properties from frontmatter
     if (property in frontmatter) {
@@ -35,22 +34,21 @@ function replaceThisExpressions(content, frontmatter, filePath) {
   });
 }
 
-// Function to ensure we have valid frontmatter, and ignore improper YAML entries like "---|---|"
-function cleanFrontmatter(content) {
-  const frontmatterRegex = /^(---[\s\S]*?---)/;
-
-  const frontmatterMatch = content.match(frontmatterRegex);
-
-  if (frontmatterMatch) {
-    let frontmatterContent = frontmatterMatch[1];
-
-    // Remove lines like "---|---|" from frontmatter content
-    frontmatterContent = frontmatterContent.replace(/---\|---\|/g, '');
-
-    return frontmatterContent;
+// Function to safely stringify the frontmatter
+function safeStringifyFrontmatter(frontmatter) {
+  // Ensure frontmatter is valid
+  if (!frontmatter || typeof frontmatter !== 'object') {
+    return ''; // Return an empty string if frontmatter is invalid or undefined
   }
 
-  return content;
+  
+  // Remove invalid or unsupported properties
+  const sanitizedFrontmatter = JSON.parse(JSON.stringify(frontmatter, (key, value) => {
+
+    return value;
+  }));
+
+  return matter.stringify(sanitizedFrontmatter);
 }
 
 // Function to process each markdown file
@@ -68,7 +66,8 @@ function processFile(filePath) {
 
   // If the content was modified, write it back to the file
   if (modifiedContent !== markdownContent) {
-    const newContent = `---\n${matter.stringify(frontmatter)}---\n${modifiedContent}`;
+    const newFrontmatter = safeStringifyFrontmatter(frontmatter);
+    const newContent = `---\n${newFrontmatter}\n---\n${modifiedContent}`;
     fs.writeFileSync(filePath, newContent, 'utf-8');
     console.log(`Processed and updated: ${filePath}`);
   } else {
@@ -80,7 +79,6 @@ function processFile(filePath) {
 function processVault(vaultPath) {
   const markdownFiles = getMarkdownFiles(vaultPath);
 
-
   markdownFiles.forEach((file) => {
     processFile(file);
   });
@@ -89,6 +87,6 @@ function processVault(vaultPath) {
 }
 
 // Run the script
-const vaultPath = path.resolve('content'); // Replace with your vault path
+const vaultPath = path.resolve('test'); // Replace with your vault path
 
 processVault(vaultPath);
