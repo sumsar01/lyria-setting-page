@@ -57,11 +57,8 @@ function cleanFrontmatter(content) {
 function processFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf-8');
 
-  // Clean frontmatter to avoid invalid syntax like "---|---|"
-  const cleanedContent = cleanFrontmatter(content);
-
   // Parse the frontmatter with gray-matter
-  const { data: frontmatter, content: markdownContent } = matter(cleanedContent);
+  const { data: frontmatter, content: markdownContent } = matter(content);
 
   console.log(`Processing file: ${filePath}`);
   console.log('Frontmatter:', frontmatter);
