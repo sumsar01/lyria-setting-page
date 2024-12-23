@@ -79,7 +79,7 @@ The 15-foot palisade deters beasts and most raiders, but is easily surmounted by
 
 A catwalk runs the circumference of the palisade and—since the incursion of the hound — town militia light braziers at dusk and walk the wall throughout the night. The night watch has done little to deter attacks. Indeed, the watch has lost four of its own volunteers to the claws of the hound.
 
-The night watch is led by [Nothan the Younger](app://obsidian.md/Nothan%20the%20Younger).
+The night watch is led by [[Nothan the Younger]].
 
 The night watch raises a cry at the first hint of danger. There is a 1-in-5 chance of the night watch passing near the PCs any time they attempt to cross the wall.
 
