@@ -51,7 +51,7 @@ _%>
 > ---|---|
 > Type | `=this.type` |
 > Size | `=this.size` |
-> Region | `=link(this.region)` |
+> Region | `=this.region` |
 > ###### Travel
 > Destination |  Travel Days  |
 > ---|---|
@@ -60,7 +60,7 @@ _%>
 > Type |  Stat |
 > ---|---|
 > Govt Type | `=this.politics` |
-> Ruler | `=link(this.leader)` |
+> Ruler | `this.leader` |
 > Defense | `=this.defences` |
 > ###### Organizations
 > Type |  Stat |
@@ -122,4 +122,4 @@ Placeholder
 `=this.region`
 
 
-`=link(this.region)`
+`=this.region`

@@ -38,11 +38,11 @@ _%>
 > Type |  Stat |
 > ---|---|
 > Type | `=this.type` |
-> Region | `=link(this.region)` |
+> Region | `=this.region` |
 > ###### Politics
 > Type |  Stat |
 > ---|---|
-> Ruler | `=link(this.leader)` |
+> Ruler | `this.leader` |
 > ###### Organizations
 > Type |  Stat |
 > ---|---|

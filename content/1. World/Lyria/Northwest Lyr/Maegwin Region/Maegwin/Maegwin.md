@@ -37,7 +37,7 @@ cssclasses:
 > ---|---|
 > Type | `=this.type` |
 > Size | `=this.size` |
-> Region | `=link(this.region)` |
+> Region | `=this.region` |
 >  ###### Travel
 > Destination |  Travel Days  |
 > ---|---|

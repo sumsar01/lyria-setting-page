@@ -30,7 +30,7 @@ Tribe: "[[Zassath'Kreen Tribe]]"
 > ---|---|
 > Type | `=this.type` |
 > Size | `=this.size` |
-> Region | `=link(this.region)` |
+> Region | `=this.region` |
 > ###### Travel
 > Destination |  Travel Days  |
 > ---|---|
@@ -40,7 +40,7 @@ Tribe: "[[Zassath'Kreen Tribe]]"
 > Type |  Stat |
 > ---|---|
 > Govt Type | `=this.politics` |
-> Ruler | `=link(this.leader)` |
+> Ruler | `this.leader` |
 > Defense | `=this.defences` |
 > ###### Society
 > Type |  Stat |

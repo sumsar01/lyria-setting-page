@@ -21,7 +21,7 @@ cssclasses:
 > Type |  Stat |
 > ---|---|
 > Type | `=this.type` |
-> Region | `=link(this.region)` |
+> Region | `=this.region` |
 > ###### Religion
 > Type |  Stat |
 > ---|---|
