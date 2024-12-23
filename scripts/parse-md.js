@@ -14,35 +14,38 @@ function getMarkdownFiles(dir) {
 
 // Function to parse a simple Dataview-like query and filter markdown files accordingly
 function executeDataviewQuery(query, files) {
-  // Example query parsing for basic "WHERE" and "SORT" clauses
   const whereMatch = query.match(/WHERE\s+(.*)/);
   const sortMatch = query.match(/SORT\s+(.*)/);
 
   let filteredFiles = files;
 
-  // Apply "WHERE" condition if it exists
+  // Apply "WHERE" conditions
   if (whereMatch) {
-    const condition = whereMatch[1].trim();
-    const [key, value] = condition.split('=').map(str => str.trim().replace(/["']/g, ''));
-
+    const conditions = whereMatch[1].trim().split(' AND '); // Support multiple conditions
     filteredFiles = filteredFiles.filter(file => {
       const { data } = matter(fs.readFileSync(file, 'utf-8'));
-      return data[key] && data[key] === value;
+
+      // Check all conditions
+      return conditions.every(condition => {
+        const [key, value] = condition.split('=').map(str => str.trim().replace(/["']/g, ''));
+        return data[key] && data[key] === value;
+      });
     });
   }
 
-  // Apply "SORT" if it exists
+  // Apply "SORT" clause
   if (sortMatch) {
     const sortField = sortMatch[1].trim();
     filteredFiles = filteredFiles.sort((a, b) => {
       const { data: dataA } = matter(fs.readFileSync(a, 'utf-8'));
       const { data: dataB } = matter(fs.readFileSync(b, 'utf-8'));
-      return dataA[sortField] > dataB[sortField] ? 1 : -1;
+      return (dataA[sortField] || '').localeCompare(dataB[sortField] || '');
     });
   }
 
   return filteredFiles;
 }
+
 
 // Function to replace Dataview blocks with the results of the query
 function processFile(filePath) {
@@ -53,23 +56,17 @@ function processFile(filePath) {
 
   // Replace each dataview block with the result of its query
   content = content.replace(dataviewRegex, (match, query) => {
-    // Get all markdown files (for query execution)
-    const files = getMarkdownFiles('content'); // You should specify the correct path for your markdown files
+    const files = getMarkdownFiles('content'); // Adjust to match your content directory
     const filteredFiles = executeDataviewQuery(query.trim(), files);
-
-    // Build a table-like result for the Dataview block
-    let result = "<table><thead><tr><th>File Name</th><th>Title</th></tr></thead><tbody>";
-
+  
+    // Build a Markdown table for the Dataview block
+    let result = "| File Name | Title |\n| --- | --- |\n";
+  
     filteredFiles.forEach(file => {
       const { data } = matter(fs.readFileSync(file, 'utf-8'));
-      result += `<tr>
-        <td>${path.basename(file)}</td>
-        <td>${data.title || 'N/A'}</td>
-      </tr>`;
+      result += `| ${path.basename(file)} | ${data.title || 'N/A'} |\n`;
     });
-
-    result += "</tbody></table>";
-
+  
     modified = true;
     return result;
   });
