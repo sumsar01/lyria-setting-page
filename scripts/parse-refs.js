@@ -14,7 +14,7 @@ function getMarkdownFiles(dir) {
 
 // Function to replace expressions like =this.file.name with the actual value
 function replaceThisExpressions(content, frontmatter, filePath) {
-  const regex = /=this\.(\w+(\.\w+)*)/g; // Matches =this.property or =this.file.name (including nested properties)
+  const regex = /=((?:link\()?this\.(\w+(\.\w+)*)(?:\))?)/g; // Matches =this.property or =this.file.name (including nested properties)
   
   return content.replace(regex, (match, property) => {
     // Handle specific properties from frontmatter
