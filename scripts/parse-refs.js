@@ -6,7 +6,7 @@ import { glob } from 'glob'; // For reading files recursively
 // Function to read all Markdown files recursively from a folder
 function getMarkdownFiles(dir) {
   let files = [];
-  glob.sync(path.join(dir, 'index.md')).forEach(file => {
+  glob.sync(path.join(dir, '**/*.md')).forEach(file => {
     files.push(file);
   });
   return files;
@@ -87,6 +87,6 @@ function processVault(vaultPath) {
 }
 
 // Run the script
-const vaultPath = path.resolve('test'); // Replace with your vault path
+const vaultPath = path.resolve('content'); // Replace with your vault path
 
 processVault(vaultPath);
