@@ -171,7 +171,7 @@ Fixed width, floats right, and strips "flair" from ![[embedded]] files */
 .callout[data-callout="item"],
 .callout[data-callout="animal"],
 .callout[data-callout="vehicle"] {
-  width: 250px; /* Adjust the width of the callout box */
+  width: 300px; /* Adjust the width of the callout box */
   float: right; /* Floats the callout box to the right */
   margin-left: 10px; /* Adds space between the callout box and the text OUTSIDE the box */
   border: 3px solid #ccc;
