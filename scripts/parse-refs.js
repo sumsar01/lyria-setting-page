@@ -12,25 +12,32 @@ function getMarkdownFiles(dir) {
   return files;
 }
 
-// Function to replace expressions like =this.file.name with the actual value
 function replaceThisExpressions(content, frontmatter, filePath) {
-  const regex = /=((?:link\()?this\.(\w+(\.\w+)*)(?:\))?)/g; // Matches =this.property or =this.file.name (including nested properties)
-  
-  return content.replace(regex, (match, property) => {
-    // Handle specific properties from frontmatter
+  const regex = /=((?:link\()?this\.(\w+(\.\w+)*)(?:\))?)/g;
+
+  return content.replace(regex, (match, fullExpression, property) => {
+    let replacement;
+
+    // Handle `=this.property`
     if (property in frontmatter) {
-      return frontmatter[property]; // Replace with actual value from frontmatter
-    } 
-    // Handle special properties like file.name or file.path
+      replacement = frontmatter[property]; // Replace with the actual value from frontmatter
+    }
+    // Handle special cases like `file.name` and `file.path`
     else if (property === 'file.name') {
-      const fileName = path.basename(filePath, '.md');
-      return fileName; // Replace with the file name (without the extension)
+      replacement = path.basename(filePath, '.md'); // Replace with file name (without extension)
+    } else if (property === 'file.path') {
+      replacement = filePath; // Replace with the full file path
     }
-    else if (property === 'file.path') {
-      return filePath; // Replace with the full file path
+
+    // Handle `=link(this.property)`
+    if (fullExpression.startsWith('link(')) {
+      if (replacement !== undefined) {
+        return `[[${replacement}]]`; // Wrap the value in Obsidian link syntax
+      }
     }
-    // If no such property, return the original expression
-    return match;
+
+    // If no match, return the original expression
+    return replacement !== undefined ? replacement : match;
   });
 }
 

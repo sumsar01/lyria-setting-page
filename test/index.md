@@ -1,43 +1,17 @@
 ---
-NoteIcon: Settlement
-tags:
-  - Category/Settlement
-Community-Size: Village
-Alignment: Chaotic Evil
-Government: Lordship
-type: Settlement
-politics: Aristocracy
-leader: "[[Jarl Gethin Penrose]]"
-guildsgroups:
-  - The Three Rats Gang
-region:
-  - "[[Ulfmyr Fen]]"
-size: Village
-population: 400
-commonraces:
-  - Humans
-religion:
-  - "[[Cyfiawnder]]"
-exports:
-  - Hide
-imports:
-  - Crafting Materials
-  - Tools
-cssclasses:
-  - wide-page
-defences: "20"
+[object Object]
 ---
 
 > [!infobox]
-> # `=this.file.name`
+> # `index`
 > ![[Ulfmyr Village.webp|cover hsmall]]
 > [[Ulfmyr Village.webp|Show To Players]]
 > ###### Geography
 > Type |  Stat |
 > ---|---|
-> Type | `=this.type` |
-> Size | `=this.size` |
-> Region | `=link(this.region)` |
+> Type | `Settlement` |
+> Size | `Village` |
+> Region | `[[[[Ulfmyr Fen]]]]` |
 >  ###### Travel
 > Destination |  Travel Days  |
 > ---|---|
@@ -48,26 +22,26 @@ defences: "20"
 > ###### Politics
 > Type |  Stat |
 > ---|---|
-> Govt Type | `=this.politics` |
-> Ruler | `=this.leader` |
-> Defense | `=this.defences` |
+> Govt Type | `Aristocracy` |
+> Ruler | `[[Jarl Gethin Penrose]]` |
+> Defense | `20` |
 > ###### Organizations
 > Type |  Stat |
 > ---|---|
-> Guilds & Groups | `=this.guildsgroups` |
+> Guilds & Groups | `The Three Rats Gang` |
 > ###### Society
 > Type |  Stat |
 > ---|---|
-> Population | `=this.population` |
-> Races | `=this.commonraces` |
-> Temples | `=this.religion`  |
+> Population | `400` |
+> Races | `Humans` |
+> Temples | `[[Cyfiawnder]]`  |
 > ###### Commerce
 > Type |  Stat |
 > ---|---|
-> Exports | `=this.exports` |
-> Imports | `=this.imports` |
+> Exports | `Hide` |
+> Imports | `Crafting Materials,Tools` |
 
-# `=this.file.name`
+# `index`
 
 The wooded moors give way to mist laden fields. Ahead, up the narrow track, stands the village of Ulfmyr. The village is defended by a low earthen rampart topped with a wooden palisade. Behind the village, a causeway rises to a great hall resting atop a craggy ridge. Black hearth-smoke hangs forlornly over the village, as if even the smoke were too frightened to venture beyond the village walls.
 
